@@ -37,7 +37,7 @@ and
 exit
 ```
 
-## 2. Start 30en server on startup
+## 2. Start 30en server as a systemctl service
 
 Create a systemctl service file:
 ```bash
