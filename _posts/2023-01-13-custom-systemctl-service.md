@@ -75,3 +75,5 @@ A example of what the status command will output:
 
 Jan 11 21:07:57 diensten systemd[1]: Started 30en server.
 ```
+## Sources
+https://blog.r0b.io/post/running-node-js-as-a-systemd-service/
