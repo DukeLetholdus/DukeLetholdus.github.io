@@ -71,7 +71,7 @@ WantedBy=multi-user.target
 
 Open the crontab:
 ```bash
-crontab -e
+sudo crontab -e
 ```
 
 On a new line paste the follwing code:
