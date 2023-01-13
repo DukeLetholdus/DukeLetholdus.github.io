@@ -7,15 +7,17 @@ tags: [homelab, software, website, webserver]     # TAG names should always be l
 # Self hosted websites layout
 
 ## File Locations
+
 |What|Where|
-|----|-----|
+|--|--|
 |Nginx|/etc/nginx|
 |Default|/var/www/html|
-|Websites|/var/www/truenas/|
+|Websites|/var/www/truenas|
 
 ## Website info
+
 |Server|IP|
-|------|--|
+|--|--|
 |Diensten|20.0.2.30|
 
 |Website|Port|
