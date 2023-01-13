@@ -15,11 +15,11 @@ tags: [homelab, software, website, webserver]     # TAG names should always be l
 
 ## Website info
 |Server|IP|
-|-|-|
+|--|--|
 |Diensten|20.0.2.30|
 
 |Website|Port|
-|-|-|
+|--|--|
 |30en|8110|
 |30en server|9090|
 |Dice|8100|

@@ -8,7 +8,7 @@ tags: [homelab, software, network, layout]     # TAG names should always be lowe
 
 ## File Locations
 |Device|Type|IP|Acces port|DNS|
-|-|-|-|-|-|
+|--|--|--|--|--|
 |Router|TPlink|80|
 |Router|PfSense|20.0.1.1|10443|
 |Server|Proxmox|20.0.2.1|8006|
