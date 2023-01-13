@@ -39,10 +39,6 @@ exit
 
 ## 2. Start 30en server as a systemctl service
 
-Create a systemctl service file:
-```bash
-touch myservice.service
-```
 Go to "how to add systemctl service" article and fill the systemctl service with: 
 ```bash
 [Unit]
