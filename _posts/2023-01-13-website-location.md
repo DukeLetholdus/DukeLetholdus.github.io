@@ -28,5 +28,3 @@ tags: [homelab, software, website, webserver]     # TAG names should always be l
 |Leeuwera|8080|
 |Leeuwera Exp|8081|
 |Tropivo|8090|
-
-some random info
