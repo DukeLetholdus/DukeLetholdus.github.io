@@ -39,8 +39,8 @@ sudo apt install php8.1-fpm php-mysql -y
 ```
 
 ## 4. Configure Nginx to use PHP and host your website
-To host multiple websites, a configuration file is created for each and included in /etc/nginx/nginx.conf. Configuration files created in /etc/nginx/sites-enabled are automatically included
-</br></br>
+To host multiple websites, a configuration file is created for each and included in /etc/nginx/nginx.conf. Configuration files created in /etc/nginx/sites-enabled are added automatically once configured
+
 To create and edit the configuration file:
 ```bash
 sudo nano /etc/nginx/sites-available/your_domain.conf
@@ -79,6 +79,15 @@ Here’s what each of these directives and location blocks do:
 * location / — The first location block includes a try_files directive, which checks for the existence of files or directories matching a URL request. If Nginx cannot find the appropriate resource, it will return a 404 error.
 * location ~ \.php$ — This location block handles the actual PHP processing by pointing Nginx to the fastcgi-php.conf configuration file and the php8.1-fpm.sock file, which declares what socket is associated with php8.1-fpm.
 * location ~ /\.ht — The last location block deals with .htaccess files, which Nginx does not process. By adding the deny all directive, if any .htaccess files happen to find their way into the document root, they will not be served to visitors.
+
+To configure Nginx to use the config file edit the following file and add the line of code under include /etc/nginx/sites-available
+
+```bash
+sudo nano /etc/nginx/nginx.conf
+```
+```bash
+include /etc/nginx/sites-enabled/*;
+```
 
 You will now have to test your configuration for syntax error by running the following command:
 ```bash
