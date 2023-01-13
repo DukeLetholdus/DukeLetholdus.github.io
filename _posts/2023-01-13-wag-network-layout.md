@@ -8,7 +8,7 @@ tags: [homelab, software, network, layout]     # TAG names should always be lowe
 
 ## File Locations
 |Device|Type|IP|Acces port|DNS|
-|--|--|--|--|--|
+|------|----|--|----------|---|
 |Router|TPlink|80||
 |Router|PfSense|20.0.1.1|10443||
 |Server|Proxmox|20.0.2.1|8006||
@@ -28,3 +28,6 @@ tags: [homelab, software, network, layout]     # TAG names should always be lowe
 |Website|30en|20.0.2.30|8110|30en.nl|
 |Website|30en server|20.0.2.30|9090||
 |PC|PC Robin Wag|20.0.3.1|||
+
+
+some random info
