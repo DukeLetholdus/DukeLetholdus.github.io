@@ -5,4 +5,17 @@ categories: [Services, Docker Compose]
 tags: [service, gotify, docker, compose, code]     # TAG names should always be lowercase
 ---
 
-# Gotify Docker Compose code
+```yml
+---
+version: "3"
+
+services:
+  gotify:
+    image: gotify/server
+    container_name: gotify
+    ports:
+      - 3002:80
+    volumes:
+      - "/home/growlithe/docker-volumes/gotify/data:/app/data"
+    restart: unless-stopped
+```

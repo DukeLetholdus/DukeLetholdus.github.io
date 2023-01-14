@@ -1,12 +1,12 @@
 ---
 title: Heimdall Docker Compose code
-date: 2021-12-14 210:46:00 +/-TTTT
+date: 2021-12-14 10:46:00 +/-TTTT
 categories: [Services, Docker Compose]
 tags: [service, heimdall, docker, compose, code]     # TAG names should always be lowercase
 ---
 
-# Heimdall Docker Compose code
-```yaml
+```yml
+---
 version: "3"
 services:
  heimdall:

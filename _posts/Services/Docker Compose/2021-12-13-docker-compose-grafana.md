@@ -5,8 +5,8 @@ categories: [Services, Docker Compose]
 tags: [service, grafana, docker, compose, code]     # TAG names should always be lowercase
 ---
 
-# Grafana Docker Compose code
-```yaml
+```yml
+---
 version: '3.7'
 
 services:
