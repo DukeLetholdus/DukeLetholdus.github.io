@@ -1,8 +1,8 @@
 ---
 title: Start 30en Server
 date: 2022-10-01 11:10:00 +/-TTTT
-categories: [Websites, 30en]
-tags: [linux, 30en, nohub, website]     # TAG names should always be lowercase
+categories: [Services, Websites]
+tags: [service, linux, 30en, nohub, website]     # TAG names should always be lowercase
 ---
 
 # Start the 30en Server
