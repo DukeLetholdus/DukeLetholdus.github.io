@@ -7,7 +7,6 @@ tags: [service, grafana, docker, compose, code]     # TAG names should always be
 
 # Grafana Docker Compose code
 ```yaml
----
 version: '3.7'
 
 services:

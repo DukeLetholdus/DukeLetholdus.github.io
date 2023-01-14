@@ -7,7 +7,6 @@ tags: [service, heimdall, docker, compose, code]     # TAG names should always b
 
 # Heimdall Docker Compose code
 ```yaml
----
 version: "3"
 services:
  heimdall:

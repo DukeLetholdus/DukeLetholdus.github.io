@@ -7,7 +7,6 @@ tags: [service, gotify, docker, compose, code]     # TAG names should always be 
 
 # Gotify Docker Compose code
 ```yaml
----
 version: "3"
 
 services:
