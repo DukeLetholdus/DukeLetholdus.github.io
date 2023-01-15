@@ -19,3 +19,12 @@ If not, make nano the default editor
 ```bash
 setenv VISUAL /usr/local/bin/nano
 ```
+
+
+Now open the crontab folder and add the line to execute the script by root every sunday at 01:00
+```bash
+nano /etc/crontab
+```
+```bash
+0 1 7 * * root /bin/sh /usr/scripts/updateplex.sh
+```
