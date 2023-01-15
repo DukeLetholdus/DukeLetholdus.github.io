@@ -13,3 +13,9 @@ fetch -o PMS_Updater.sh https://raw.githubusercontent.com/mstinaff/PMS_Updater/m
 chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -vv -a
 ```
+
+## 2. Automate the update
+If not, make nano the default editor
+```bash
+setenv VISUAL /usr/local/bin/nano
+```
