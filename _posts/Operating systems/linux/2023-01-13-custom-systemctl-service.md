@@ -75,5 +75,12 @@ A example of what the status command will output:
 
 Jan 11 21:07:57 diensten systemd[1]: Started 30en server.
 ```
+
+## 4. List running services
+To make sure the service is running you can run the following command to list all services
+```bash
+systemctl list-units --type=service
+```
+
 ## Sources
 https://blog.r0b.io/post/running-node-js-as-a-systemd-service/

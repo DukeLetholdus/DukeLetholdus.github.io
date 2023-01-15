@@ -59,3 +59,19 @@ The format for Crontab is 5 input fields for time, separated by tab or space, an
 | Every Monday at 09:00          | 0 9 * * 1       |
 | Every Weekday at 22:00         | 0 22 * * 1-5    |
 | Every 1st of December at 12:00 | 0 12 1 12 *     |
+
+## Example
+```bash
+0 1 7 * * root /bin/sh /usr/scripts/updateplex.sh
+```
+
+## crontab logs
+To view the output of crontab scrub the systemlogs for cron
+linux
+```bash
+grep CRON /var/log/syslog
+```
+freebsd
+```bash
+tail /var/log/cron
+```

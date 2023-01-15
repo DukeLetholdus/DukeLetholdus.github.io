@@ -72,5 +72,5 @@ sudo crontab -e
 
 On a new line paste the follwing code:
 ```bash
-0 4 * * * systemctl restart 30en.service
+0 4 * * * systemctl restart 30enserver.service
 ```
