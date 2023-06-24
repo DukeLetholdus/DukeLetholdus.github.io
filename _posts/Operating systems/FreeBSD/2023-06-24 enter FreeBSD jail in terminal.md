@@ -1,6 +1,6 @@
 ---
 title: Enter jail in FreeBSD
-date: 2023-06-24 10:00:00 +/-TTTT
+date: 2023-06-24 01:00:00 +/-TTTT
 categories: [Operating Systems, FreeBSD]
 tags: [freebsd, jail]     # TAG names should always be lowercase
 ---
