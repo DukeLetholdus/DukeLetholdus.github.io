@@ -28,12 +28,12 @@ sudo systemctl status cron
 
 To open Crontab
 ```bash
-crontab -e
+sudo nano /etc/crontab
 ```
 
 To open Crontab with other editor use:
 ```bash
-export VISUAL=EDITOR; crontab -e
+export VISUAL=EDITOR; sudo nano /etc/crontab
 ```
 List of common editors to use in command above:
 * nano
