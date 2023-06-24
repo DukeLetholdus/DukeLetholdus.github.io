@@ -1,21 +1,40 @@
 ---
-title: Enter jail in FreeBSD
-date: 2023-02-13 17:50:00 +/-TTTT
+title: Enter FreeBSD jail from terminal
+date: 2021-11-28 11:11:00 +/-TTTT
 categories: [Operating Systems, FreeBSD]
-tags: [freebsd, jail]     # TAG names should always be lowercase
+tags: [freebsd, plex, cron]     # TAG names should always be lowercase
 ---
 
-## 1. Find Jail ID
+## 1. Manual update
 
-The jail ID can be found with the command:
+Navigate into the plex jail shell ande execute the following commands:
 ```bash
-jls
+fetch -o PMS_Updater.sh https://raw.githubusercontent.com/mstinaff/PMS_Updater/master/PMS_Updater.sh
+chmod 755 PMS_Updater.sh
+./PMS_Updater.sh -vv -a
 ```
 
-## 2. Enter FreeBSD Jail
-
-When the jail ID has been discovered you can enter the jail with the following command:
+## 2. Automate the update
+If not, make nano the default editor
 ```bash
-jexec ${jailID} /bin/tcsh
+setenv VISUAL /usr/local/bin/nano
 ```
-Where ${jailID} is the jail ID
+create the bash script to be executed by cron and paste the commands in that file
+```bash
+nano /usr/scripts/updateplex.sh
+```
+
+```bash
+#!/bin/sh
+fetch -o PMS_Updater.sh https://raw.githubusercontent.com/mstinaff/PMS_Updater/master/PMS_Updater.sh
+chmod 755 PMS_Updater.sh
+./PMS_Updater.sh -vv -a
+```
+
+Now open the crontab folder and add the line to execute the script by root every sunday at 01:00
+```bash
+nano /etc/crontab
+```
+```bash
+0 1 7 * * root /bin/sh /usr/scripts/updateplex.sh
+```
