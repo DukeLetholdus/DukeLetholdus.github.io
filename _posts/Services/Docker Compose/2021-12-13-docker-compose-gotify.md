@@ -16,6 +16,6 @@ services:
     ports:
       - 3002:80
     volumes:
-      - "/home/growlithe/docker-volumes/gotify/data:/app/data"
+      - "/home/leeuwera/docker/gotify/data:/app/data"
     restart: unless-stopped
 ```

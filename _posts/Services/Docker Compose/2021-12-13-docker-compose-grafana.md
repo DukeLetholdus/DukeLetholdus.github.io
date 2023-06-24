@@ -13,8 +13,8 @@ services:
  prometheus:
   image: prom/prometheus:v2.1.0
   volumes:
-   - /home/growlithe/docker-volumes/grafana/data/prometheus:/etc/prometheus
-   - /home/growlithe/docker-volumes/grafana/data/prometheus.yml:/etc/prometheus/prometheus.yml
+   - /home/leeuwera/docker/grafana/data/prometheus:/etc/prometheus
+   - /home/leeuwera/docker/grafana/data/prometheus.yml:/etc/prometheus/prometheus.yml
   container_name: prometheus
   ports:
    - 9200:9090

@@ -13,7 +13,7 @@ services:
   image: linuxserver/heimdall
   container_name: heimdall
   volumes:
-   - /home/growlithe/docker-volumes/heimdall/data:/config
+   - /home/leeuwera/docker/heimdall/data:/config
   environment:
    - PUID=1000
    - PGID=1000

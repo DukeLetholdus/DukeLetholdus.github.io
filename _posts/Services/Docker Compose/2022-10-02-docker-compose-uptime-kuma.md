@@ -7,19 +7,15 @@ tags: [service, uptime kuma, docker, compose, code]     # TAG names should alway
 
 ```yml
 ---
-version: "3"
+version: "3.1"
+
 services:
- heimdall:
-  image: linuxserver/heimdall
-  container_name: heimdall
+ uptime-kuma:
+  image: louislam/uptime-kuma:1
+  container_name: uptime-kuma
   volumes:
-   - /home/growlithe/docker-volumes/heimdall/data:/config
-  environment:
-   - PUID=1000
-   - PGID=1000
-   - TZ=Europe/Amsterdam
+   - /home/leeuwera/docker/uptime/data:/app/data
   ports:
-   - "4100:80"
-   - "4101:443"
+   - 3001:3001
   restart: unless-stopped
 ```
