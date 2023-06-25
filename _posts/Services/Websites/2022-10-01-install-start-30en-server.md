@@ -67,10 +67,10 @@ WantedBy=multi-user.target
 
 Open the crontab:
 ```bash
-sudo crontab -e
+sudo nano /etc/crontab
 ```
 
 On a new line paste the follwing code:
 ```bash
-0 4 * * * systemctl restart 30enserver.service
+0 4 * * * root systemctl restart 30enserver.service
 ```
