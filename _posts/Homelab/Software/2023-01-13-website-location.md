@@ -22,9 +22,6 @@ tags: [homelab, software, website, webserver]     # TAG names should always be l
 
 |Website|Port|
 |-------|----|
-
-
-
 |Leeuwera|8080|
 |Leeuwera Exp|8081|
 |Tropivo|8090|
@@ -34,5 +31,5 @@ tags: [homelab, software, website, webserver]     # TAG names should always be l
 |Dashy|8130|
 |Gotify|8140|
 |Mealie|8150|
-|servers|---|
+|servers||
 |30en server|9090|
