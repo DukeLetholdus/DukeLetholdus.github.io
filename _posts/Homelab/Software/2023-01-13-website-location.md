@@ -22,6 +22,11 @@ tags: [homelab, software, website, webserver]     # TAG names should always be l
 
 |Website|Port|
 |-------|----|
+|qBittorrent|8070|
+|Prowlarr|8071|
+|Sonarr|8072|
+|Radarr|8073|
+|Overseerr|8074|
 |Leeuwera|8080|
 |Leeuwera Exp|8081|
 |Tropivo|8090|
