@@ -14,7 +14,7 @@ services:
     image: gotify/server
     container_name: gotify
     ports:
-      - 3002:80
+      - 8140:80
     volumes:
       - "/home/leeuwera/docker/gotify/data:/app/data"
     restart: unless-stopped
